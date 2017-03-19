@@ -17,7 +17,8 @@ namespace Concurrent.Coffee.V1
                 new Customer("Laura Lawrence", new List<DrinkTypes> { DrinkTypes.CuppaTea, DrinkTypes.StrawberryTea}),
                 new Customer("Sarah Hill", new List<DrinkTypes> { DrinkTypes.BlackTea}),
                 new Customer("Jonah Boner", new List<DrinkTypes> { DrinkTypes.VomitTea, DrinkTypes.Americano})
-                });
+                }); 
+        
 
 
             Customers.ToList().ForEach(Console.WriteLine);
