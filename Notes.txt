@@ -1,0 +1,29 @@
+Coffee Hierarchy
+================
+Coffees & Teas.
+Common Base?
+
+Drink
+	Coffee
+		Americano
+		Latte
+		FlatWhite
+		Custom
+	Tea
+		Black
+		Breakfast
+		Earl Grey
+		Fruit
+			Strawberry
+			Ammonia 
+			Vommit
+But for simplicity....Customer needs to be able to pass a represensation that can be easily translated.
+
+
+Customer
+==========
+Id : guid
+Name : string
+Order : [] drinkEnum
+Drinks: [] drinks
+
