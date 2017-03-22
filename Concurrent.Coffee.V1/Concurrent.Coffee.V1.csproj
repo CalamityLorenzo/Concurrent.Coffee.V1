@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CoffeeShop\Barista.cs" />
+    <Compile Include="CoffeeShop\CoffeeFuncs.cs" />
     <Compile Include="CoffeeShop\Customer.cs" />
     <Compile Include="CoffeeShop\Drinks\Americano.cs" />
     <Compile Include="CoffeeShop\Drinks\CuppaTea.cs" />
@@ -54,8 +55,10 @@
     <Compile Include="CoffeeShop\Drinks\Espresso.cs" />
     <Compile Include="CoffeeShop\Drinks\FlatWhite.cs" />
     <Compile Include="CoffeeShop\Drinks\Latte.cs" />
-    <Compile Include="CoffeeShop\DrinkTypes.cs" />
-    <Compile Include="CoffeeShop\IDrink.cs" />
+    <Compile Include="CoffeeShop\Drinks\DrinkTypes.cs" />
+    <Compile Include="CoffeeShop\Drinks\IDrink.cs" />
+    <Compile Include="CoffeeShop\Ingredients\CoffeeBeans.cs" />
+    <Compile Include="CoffeeShop\Size.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Concurrent.Coffee.V1.CoffeeShop
+namespace Concurrent.Coffee.V1.CoffeeShop.Ingredients
 {
-    internal interface IDrink
+    internal class CoffeeBeans
     {
-        DrinkTypes Type { get; }
-        string Name { get; }
     }
+
+    internal class Grounds { }
 }

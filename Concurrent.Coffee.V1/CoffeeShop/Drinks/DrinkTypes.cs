@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Concurrent.Coffee.V1.CoffeeShop
+namespace Concurrent.Coffee.V1.CoffeeShop.Drinks
 {
     internal enum DrinkTypes
     {
