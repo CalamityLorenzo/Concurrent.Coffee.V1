@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Concurrent.Coffee.V1.CoffeeShop.Drinks
 {
-    internal enum DrinkTypes
+    internal enum DrinkName
     {
         InvalidDrink = 0,
-        Americano=2,
-        Espresso=3,
-        FlatWhite=4,
-        Latte=5,
-        BlackTea=6,
+        Americano,
+        Espresso,
+        FlatWhite,
+        Latte,
+        BlackTea,
         WhiteTea,
         StrawberryTea,
         VomitTea,

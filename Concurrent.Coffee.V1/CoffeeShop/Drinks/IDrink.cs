@@ -8,7 +8,7 @@ namespace Concurrent.Coffee.V1.CoffeeShop.Drinks
 {
     internal interface IDrink
     {
-        DrinkTypes Type { get; }
+        DrinkName Type { get; }
         string Name { get; }
     }
 }

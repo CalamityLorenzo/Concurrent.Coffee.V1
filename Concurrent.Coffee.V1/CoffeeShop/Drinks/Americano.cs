@@ -16,11 +16,11 @@ namespace Concurrent.Coffee.V1.CoffeeShop.Drinks
             } 
         }
 
-        public DrinkTypes Type
+        public DrinkName Type
         {
             get
             {
-                return DrinkTypes.Americano;
+                return DrinkName.Americano;
             }
         }
     }
