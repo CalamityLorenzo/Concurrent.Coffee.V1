@@ -47,13 +47,13 @@ namespace Concurrent.Coffee.V1.CoffeeShop
             var sizes = GetMeasures(CupSize, DrinkName);
             BoilWater(3000);
             var grnds = GrindBeans(sizes.Item1);
-            
+
 
         }
 
         private static Tuple<List<CoffeeBeans>, MilliLitres> GetMeasures(CupSize cupSize, DrinkName drinkName)
         {
-            if(drinkName == DrinkName.Espresso)
+            if (drinkName == DrinkName.Espresso)
             {
                 switch (cupSize)
                 {
@@ -68,9 +68,11 @@ namespace Concurrent.Coffee.V1.CoffeeShop
                         throw new ArgumentOutOfRangeException("Unknown Size!");
 
                 }
-            }else
+            }
+            else
             {
-                switch (cupSize) {
+                switch (cupSize)
+                {
                     case CupSize.Small:
                         return Tuple.Create(new List<CoffeeBeans> {
                                                 { new CoffeeBeans() },
@@ -89,13 +91,13 @@ namespace Concurrent.Coffee.V1.CoffeeShop
                 }
             }
         }
-        
+
         static MilliLitres AmountToBoil<T>(CupSize CupSize)
         {
             return null;
         }
 
-        static Func<T,U> Memoiz<T,U>(Func<T,U>FuncToStore)
+        static Func<T, U> Memoiz<T, U>(Func<T, U> FuncToStore)
         {
             Dictionary<T, U> Dict = new Dictionary<T, U>();
             return (ky) =>

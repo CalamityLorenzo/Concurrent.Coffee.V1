@@ -61,6 +61,7 @@
     <Compile Include="CoffeeShop\Ingredients\CoffeeBeans.cs" />
     <Compile Include="CoffeeShop\Measures\Measures.cs" />
     <Compile Include="CoffeeShop\Size.cs" />
+    <Compile Include="CoffeeShop\Utilitiy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
