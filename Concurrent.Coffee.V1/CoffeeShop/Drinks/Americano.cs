@@ -13,7 +13,7 @@ namespace Concurrent.Coffee.V1.CoffeeShop.Drinks
             get
             {
                 return "Americano";
-            }
+            } 
         }
 
         public DrinkTypes Type
@@ -24,4 +24,5 @@ namespace Concurrent.Coffee.V1.CoffeeShop.Drinks
             }
         }
     }
+
 }

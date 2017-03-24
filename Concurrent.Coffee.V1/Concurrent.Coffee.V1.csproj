@@ -46,6 +46,7 @@
     <Compile Include="CoffeeShop\Barista.cs" />
     <Compile Include="CoffeeShop\CoffeeFuncs.cs" />
     <Compile Include="CoffeeShop\Customer.cs" />
+    <Compile Include="CoffeeShop\OrderedDrink.cs" />
     <Compile Include="CoffeeShop\Drinks\Americano.cs" />
     <Compile Include="CoffeeShop\Drinks\CuppaTea.cs" />
     <Compile Include="CoffeeShop\Drinks\VomitTea.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="CoffeeShop\Drinks\DrinkTypes.cs" />
     <Compile Include="CoffeeShop\Drinks\IDrink.cs" />
     <Compile Include="CoffeeShop\Ingredients\CoffeeBeans.cs" />
+    <Compile Include="CoffeeShop\Measures\Measures.cs" />
     <Compile Include="CoffeeShop\Size.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,6 +1,11 @@
 ﻿namespace Concurrent.Coffee.V1.CoffeeShop
 {
-    internal class Size
+    internal enum CupSize
     {
+        Unknown=0,
+        Shot,
+        Small,
+        Medium,
+        Large
     }
 }

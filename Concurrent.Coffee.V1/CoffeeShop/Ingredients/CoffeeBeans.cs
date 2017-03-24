@@ -8,6 +8,7 @@ namespace Concurrent.Coffee.V1.CoffeeShop.Ingredients
 {
     internal class CoffeeBeans
     {
+
     }
 
     internal class Grounds { }

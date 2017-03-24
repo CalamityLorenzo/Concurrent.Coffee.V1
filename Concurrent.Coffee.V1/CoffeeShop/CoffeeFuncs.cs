@@ -1,5 +1,6 @@
 ﻿using Concurrent.Coffee.V1.CoffeeShop.Drinks;
 using Concurrent.Coffee.V1.CoffeeShop.Ingredients;
+using Concurrent.Coffee.V1.CoffeeShop.Measures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +11,10 @@ namespace Concurrent.Coffee.V1.CoffeeShop
 {
     static class CoffeeFuncs
     {
-        static Grounds GrindBeans(CoffeeBeans Beans)
+        static Grounds GrindBeans(IList<CoffeeBeans> Beans)
         {
             Console.WriteLine("Grinding the Beans!");
-            System.Threading.Thread.Sleep(2000);
+            System.Threading.Thread.Sleep(Beans.Count * 1000);
             return new Grounds();
         }
 
@@ -30,10 +31,25 @@ namespace Concurrent.Coffee.V1.CoffeeShop
             return default(T);
         }
 
-        static T MakeCoffee<T>(Size CupSize) where T: IDrink{
-            var grnds = GrindBeans(new CoffeeBeans());
+        static T MakeCoffee<T>(CupSize CupSize) where T : IDrink
+        {
             BoilWater(3000);
+            var grnds = GrindBeans(new List<CoffeeBeans> { new CoffeeBeans() });
             return PourCoffee<T>(grnds, 2000);
+        }
+
+        static IDrink MakeCoffee(CupSize CupSize, DrinkTypes DrinkType)
+        {
+            // Cupsize decides how much water we need.
+            // but CupSize is a property of the drink order
+
+        }
+
+
+
+        static MilliLitres AmountToBoil<T>(Size CupSize)
+        {
+
         }
 
     }

@@ -1,5 +1,6 @@
 ﻿using Concurrent.Coffee.V1.CoffeeShop;
 using Concurrent.Coffee.V1.CoffeeShop.Drinks;
+using Concurrent.Coffee.V1.CoffeeShop.Measures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,8 +27,17 @@ namespace Concurrent.Coffee.V1
 
             var cust = Customers.ElementAtOrDefault(0);
             cust = Customer.AddDrinks(cust, new List<IDrink> { new Espresso(), new Latte(), new Latte() });
-            Console.WriteLine();
-            Console.WriteLine(cust);
+
+            MilliLitres ml = 1700;
+            MilliLitres ml2 = new MilliLitres(10001 + ml);
+
+            Litres l = ml;
+
+            Console.WriteLine(l);
+            Console.WriteLine(ml);
+            Console.WriteLine(ml2);
+
+
 
         }
     }
