@@ -41,6 +41,7 @@ namespace Concurrent.Coffee.V1.CoffeeShop.Drinks
                     default:
                         throw new ArgumentOutOfRangeException("Espressos aint that big");
                 }
+            }
         }
     }
 }

@@ -9,7 +9,13 @@ using Concurrent.Coffee.V1.CoffeeShop.Drinks;
 
 namespace Concurrent.Coffee.V1.CoffeeShop
 {
-    class OrderedDrink<T> where T : IDrink
+    interface IOrderedDrink
+    {
+        IEnumerable<CoffeeBeans> Beans { get; }
+        MilliLitres RequiredWater { get; }
+    }
+
+    class OrderedDrink<T> : IOrderedDrink where T : IDrink
     {
         public T Drink { get; }
         public IEnumerable<CoffeeBeans> Beans { get; }

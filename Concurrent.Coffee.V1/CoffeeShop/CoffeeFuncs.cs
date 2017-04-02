@@ -40,15 +40,14 @@ namespace Concurrent.Coffee.V1.CoffeeShop
             return PourCoffee<T>(grnds, 2000);
         }
 
-        static IDrink MakeCoffee(CupSize CupSize, DrinkName DrinkName)
+        static IOrderedDrink MakeCoffee(CupSize CupSize, DrinkName DrinkName)
         {
             // Cupsize decides how much water we need.
             // but CupSize is a property of the drink order
             var sizes = GetMeasures(CupSize, DrinkName);
             BoilWater(3000);
             var grnds = GrindBeans(sizes.Item1);
-
-
+            return null;
         }
 
         private static Tuple<List<CoffeeBeans>, MilliLitres> GetMeasures(CupSize cupSize, DrinkName drinkName)
